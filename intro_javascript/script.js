@@ -1,6 +1,20 @@
 //começando...
 //const, let, var (declaração de variáveis obs: não é tipada)
 
+//hoist: içanento
+let idade = 18
+console.log("Oi, " + nome)
+if (idade >= 18){
+    let nome = "João"
+    console.log("Parabéns, " + nome + ". Você pode dirigir")
+}
+console.log("Até mais, " + nome)
+
+//var linguagem = "Javascript"
+//console.log("Aprendendo " + linguagem)
+//var linguagem = "Java"
+//console.log("Aprendendo " + linguagem)
+
 //var nome = 'José'  
 //console.log(nome)
 //nome = "João"
