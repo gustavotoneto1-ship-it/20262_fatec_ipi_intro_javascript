@@ -1,4 +1,54 @@
 //começando...
+//objetos javascript
+//objetos JSON (javascript object notation)
+//uma concessionaria que tem cnpj e endereço. Endereço tem rua, bairro e número.
+//a concessionaria tem uma coleção de veículos, Cada veículo tem marca, modelo e ano de fabricação
+//uma calculadora realiza as operações de soma e subtração
+/*const calculadora = {
+    somar: function(a, b){
+        return a + b
+    },
+    subtrair: (a, b) => a - b
+}
+
+console.log(calculadora.somar(1, 2))
+console.log(calculadora.subtrair(2, 1))*/
+
+/*let concessionaria = {
+    cnpj: "12345678910",
+    Endereco: {
+        rua: "A",
+        bairro: "B",
+        numero: 20
+    },
+    veiculo: [{ marca: "Fiat", modelo: "Fiesta", anoFabricacao: 2014},
+              { marca: "ford", modelo: "Ka", anoFabricacao: 2016}
+    ]
+}*/
+
+//uma pessoa se chama Maria, tem 21 anos e mora na rua B, numero 20
+/*let pessoa = {
+    nome: "Maria",
+    idade: 21,
+    Endereco: {
+        rua: "B",
+        numero: 20
+    }
+}
+console.log(pessoa.nome)
+console.log(pessoa.idade)
+console.log("Rua: " + pessoa.Endereco.rua)
+console.log("Número: " + pessoa.Endereco.numero)*/
+
+//uma pessoa chamada joão que tem 17 anos
+/*let pessoa = {
+    nome: "João", //par chave valor
+    idade: 17 //par chave valor 
+}
+
+console.log(pessoa.nome)
+console.log(pessoa['idade'])
+console.log(pessoa.idade)*/
 
 /*function eAgora(){
     let cont = 1
