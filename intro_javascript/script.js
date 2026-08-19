@@ -1,4 +1,108 @@
 //começando...
+
+//1 + 2 + 3 + ... + (n-2) + (n - 1) + n
+//promise
+//se n for negativo, devolver uma promisse rejected, associada ao texto "apenas positivo"
+const calculoRapidinho = (n) => {
+    return n >= 0 ? Promise.resolve((n / 2) * (n + 1)) : Promise.reject("Apenas positivos")
+}
+//tratar ambos os casos usando then catch
+calculoRapidinho(100)
+.then(res => console.log(`Resultado: ${res}`))
+.catch(erro => console.log(`Erro: ${erro}`))
+
+// const calculoRapidinho = (n) => {
+//     return Promise.resolve((n / 2) * (n + 1))
+// }
+// calculoRapidinho(100).then((res) => {
+//     console.log(res)
+// })
+// console.log("terminando script principal...")
+
+// function calculoDemorado(n){
+//     return new Promise(function(resolve, reject){
+//         let res = 0
+//         for(let i = 1; i <= n; i++){
+//             res += i
+//         }
+//         resolve(res)
+//     })
+// }
+// //construção than/catch
+// //calculoDemorado(100).then((resultado) => {console.log(resultado)})
+// const auxiliar = calculoDemorado(100)
+// auxiliar.then(function(res){
+//     console.log(res)
+// })
+
+//CPU-Bound: calculos, continhas 
+//IO-Bound: entrada e saída
+//inferno de callbacks
+/*const fs = require('fs') //file system
+console.log("A")
+const abrirArquivo = function (nomeArquivo){
+    //definir uma função callback
+    const exibirConteudo = function(erro, conteudo){
+        if(erro){
+            console.log(`Deu erro: ${erro}`)
+        }
+        else{
+            console.log(conteudo.toString())
+            const dobro = +conteudo.toString() * 2
+            const finalizar = function(erro){
+                if(erro){
+                    console.log("Erro ao salvar o dobro")
+                }
+                else{
+                    console.log("Salvou o dobro ok")
+                }
+                console.log("F")
+            }
+            fs.writeFile("dobro.txt", dobro.toString(), finalizar)
+            console.log("E")
+        }
+        console.log("D")
+    }
+    //chamar a função de leitura do arquivo do módulo fs, entregando a callback como parametro
+    fs.readFile(nomeArquivo, exibirConteudo)
+    console.log("C")
+}
+abrirArquivo("arquivo.txt")
+console.log("B")*/
+
+/*console.log("Script principal comecou...")
+setTimeout(() => {
+    console.log("Dentro do timeout...")
+}, 0)
+const data = new Date().getTime() + 10000
+while(new Date().getTime() <= data);
+console.log("script principal terminou...")*/
+
+
+/*function demorada(){
+    const atualMais2Segundos = new Date().getTime() + 2000
+    while(new Date().getTime() <= atualMais2Segundos);
+    const d = 8 + 4
+    return d
+}
+const a = 2 + 3
+const b = 5 + 9
+setTimeout(() => {
+    const d = demorada()
+    //interpolação (juntar)
+    console.log(`d: ${d}`)
+}, 500)
+const e = 2 + a + b
+console.log(`e: ${e}`)*/
+
+/*const a = 2 + 7
+const b = 5
+console.log(a + b)*/
+
+/*console.log("Eu primeiro...")
+console.log("Agora eu")
+console.log("Sempre vou ser a ultima...:(")*/
+
 //objetos javascript
 //objetos JSON (javascript object notation)
 //uma concessionaria que tem cnpj e endereço. Endereço tem rua, bairro e número.
